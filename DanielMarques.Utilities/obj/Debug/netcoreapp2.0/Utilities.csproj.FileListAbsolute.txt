@@ -1,0 +1,9 @@
+D:\Projects\Utilities\Utilities\bin\Debug\netcoreapp2.0\Utilities.deps.json
+D:\Projects\Utilities\Utilities\bin\Debug\netcoreapp2.0\Utilities.dll
+D:\Projects\Utilities\Utilities\bin\Debug\netcoreapp2.0\Utilities.pdb
+D:\Projects\Utilities\Utilities\obj\Debug\netcoreapp2.0\Utilities.csprojResolveAssemblyReference.cache
+D:\Projects\Utilities\Utilities\obj\Debug\netcoreapp2.0\Utilities.csproj.CoreCompileInputs.cache
+D:\Projects\Utilities\Utilities\obj\Debug\netcoreapp2.0\Utilities.AssemblyInfoInputs.cache
+D:\Projects\Utilities\Utilities\obj\Debug\netcoreapp2.0\Utilities.AssemblyInfo.cs
+D:\Projects\Utilities\Utilities\obj\Debug\netcoreapp2.0\Utilities.dll
+D:\Projects\Utilities\Utilities\obj\Debug\netcoreapp2.0\Utilities.pdb

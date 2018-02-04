@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>brazil-utilities</id>
+    <version>1.0.0</version>
+    <authors>Daniel Azevedo Marques</authors>
+    <owners>Daniel Azevedo Marques</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/harugrin/brazil-utilities/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/harugrin/brazil-utilities</projectUrl>
+    <description>Utility libraries to Brazilian specific documents, zip codes and more.</description>
+    <releaseNotes>Version 1.0.0.0 has structs to provide CPF and CNPJ validation and formating.
+Use this structs to create your own classes.</releaseNotes>
+    <repository type="Git" url="https://github.com/harugrin/brazil-utilities" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="Microsoft.Extensions.Configuration" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="2.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Projects\Utilities\Utilities\bin\Release\netcoreapp2.0\DanielMarques.Utilities.dll" target="lib\netcoreapp2.0\DanielMarques.Utilities.dll" />
+  </files>
+</package>
