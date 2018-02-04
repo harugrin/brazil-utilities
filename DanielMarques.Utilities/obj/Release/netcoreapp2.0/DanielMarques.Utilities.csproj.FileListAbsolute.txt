@@ -1,0 +1,9 @@
+D:\Projects\Utilities\Utilities\bin\Release\netcoreapp2.0\DanielMarques.Utilities.deps.json
+D:\Projects\Utilities\Utilities\bin\Release\netcoreapp2.0\DanielMarques.Utilities.dll
+D:\Projects\Utilities\Utilities\bin\Release\netcoreapp2.0\DanielMarques.Utilities.pdb
+D:\Projects\Utilities\Utilities\obj\Release\netcoreapp2.0\DanielMarques.Utilities.csprojResolveAssemblyReference.cache
+D:\Projects\Utilities\Utilities\obj\Release\netcoreapp2.0\DanielMarques.Utilities.csproj.CoreCompileInputs.cache
+D:\Projects\Utilities\Utilities\obj\Release\netcoreapp2.0\DanielMarques.Utilities.AssemblyInfoInputs.cache
+D:\Projects\Utilities\Utilities\obj\Release\netcoreapp2.0\DanielMarques.Utilities.AssemblyInfo.cs
+D:\Projects\Utilities\Utilities\obj\Release\netcoreapp2.0\DanielMarques.Utilities.dll
+D:\Projects\Utilities\Utilities\obj\Release\netcoreapp2.0\DanielMarques.Utilities.pdb

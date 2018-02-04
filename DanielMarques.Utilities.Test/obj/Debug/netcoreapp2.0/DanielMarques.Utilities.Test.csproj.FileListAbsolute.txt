@@ -1,0 +1,16 @@
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.deps.json
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.runtimeconfig.json
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.runtimeconfig.dev.json
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.dll
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.pdb
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\DanielMarques.Utilities.dll
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\bin\Debug\netcoreapp2.0\DanielMarques.Utilities.pdb
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\obj\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\obj\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\obj\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.AssemblyInfoInputs.cache
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\obj\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.AssemblyInfo.cs
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\obj\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.dll
+C:\Users\Daniel\Source\Repos\brazil-utilities\DanielMarques.Utilities.Test\obj\Debug\netcoreapp2.0\DanielMarques.Utilities.Test.pdb

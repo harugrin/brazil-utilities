@@ -1,0 +1,4 @@
+{
+    "ExplicitLongOperator": "O valor excede o máximo para conversão.",
+    "ImplicitStringOperator": "O valor informado não é um CPF válido."
+}
