@@ -1,9 +1,0 @@
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\bin\Debug\netstandard2.0\DanielMarques.Utilities.deps.json
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\bin\Debug\netstandard2.0\DanielMarques.Utilities.dll
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\bin\Debug\netstandard2.0\DanielMarques.Utilities.pdb
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\obj\Debug\netstandard2.0\DanielMarques.Utilities.csprojAssemblyReference.cache
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\obj\Debug\netstandard2.0\DanielMarques.Utilities.csproj.CoreCompileInputs.cache
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\obj\Debug\netstandard2.0\DanielMarques.Utilities.AssemblyInfoInputs.cache
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\obj\Debug\netstandard2.0\DanielMarques.Utilities.AssemblyInfo.cs
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\obj\Debug\netstandard2.0\DanielMarques.Utilities.dll
-C:\Users\lc5553408\Source\Repos\brazil-utilities\DanielMarques.Utilities\obj\Debug\netstandard2.0\DanielMarques.Utilities.pdb
