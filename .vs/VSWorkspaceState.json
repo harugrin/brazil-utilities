@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DanielMarques.Utilities",
+    "\\DanielMarques.Utilities.Test",
+    "\\DanielMarques.Utilities\\strings"
   ],
-  "SelectedNode": "\\DanielMarques.Utilities.sln",
   "PreviewInSolutionExplorer": false
 }

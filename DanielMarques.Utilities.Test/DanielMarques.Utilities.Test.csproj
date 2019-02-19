@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Utilities\DanielMarques.Utilities.csproj" />
+    <ProjectReference Include="..\DanielMarques.Utilities\DanielMarques.Utilities.csproj" />
   </ItemGroup>
 
 </Project>
