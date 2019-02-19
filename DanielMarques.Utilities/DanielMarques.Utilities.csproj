@@ -18,7 +18,8 @@ Version 1.1.0.0 has the brazilian car plate number patterns, both the old / curr
 Use this structs to create your own classes.</PackageReleaseNotes>
     <AssemblyName>DanielMarques.Utilities</AssemblyName>
     <RootNamespace>DanielMarques.Utilities</RootNamespace>
-    <Version>1.1.0</Version>
+    <Version>1.1.0-dev</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

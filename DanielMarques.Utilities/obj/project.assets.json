@@ -573,7 +573,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.1.0",
+    "version": "1.1.0-dev",
     "restore": {
       "projectUniqueName": "C:\\Users\\lc5553408\\Source\\Repos\\brazil-utilities\\DanielMarques.Utilities\\DanielMarques.Utilities.csproj",
       "projectName": "brazil-utilities",

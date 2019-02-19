@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Utility libraries to Brazilian specific documents, zip codes and more.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0-dev")]
 [assembly: System.Reflection.AssemblyProductAttribute("brazil-utilities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DanielMarques.Utilities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.0.0")]
