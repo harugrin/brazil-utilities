@@ -27,16 +27,16 @@ namespace DanielMarques.Utilities
         /// <param name="value">A string with the Plate's value</param>
         public static implicit operator Plate(string value)
         {
-            if (!Plate.IsValid(value))
-                throw new System.ArgumentException(Resources.GetString("plate", "ImplicitStringOperator"));
-
-            var matchs = Regex.Matches(value, @"[a-zA-Z0-9]");
-            string str = string.Empty;
-            foreach (Match m in matchs)
-                str += m.Value.ToUpper();
-
             try
             {
+                if (!Plate.IsValid(value))
+                    throw new System.ArgumentException(Resources.GetString("plate", "ImplicitStringOperator"));
+
+                var matchs = Regex.Matches(value, @"[a-zA-Z0-9]");
+                string str = string.Empty;
+                foreach (Match m in matchs)
+                    str += m.Value.ToUpper();
+
                 return new Plate(str.ToString());
             }
             catch
