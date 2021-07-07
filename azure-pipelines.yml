@@ -1,19 +1,111 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-trigger:
-- master
-
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+#Your build pipeline references an undefined variable named ‘Parameters.RestoreBuildProjects’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references an undefined variable named ‘Parameters.RestoreBuildProjects’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
+#Your build pipeline references an undefined variable named ‘Parameters.TestProjects’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
+#Your build pipeline references an undefined variable named ‘find -name "*.csproj" ! -name "*[Tt]est*.csproj"’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references an undefined variable named ‘find -name "*.csproj" ! -name "*[Tt]est*.csproj"’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references an undefined variable named ‘awk -F'[<>]' '/<Version>/{print $3}' $csprojeFilePath’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references an undefined variable named ‘awk -F'[<>]' '/<VersionPrefix>/{print $3}' $csprojeFilePath’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references an undefined variable named ‘awk -F'[<>]' '/<AssemblyVersion>/{print $3}' $csprojeFilePath’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '$(Parameters.RestoreBuildProjects)'
+
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    projects: '$(Parameters.RestoreBuildProjects)'
+    arguments: '--configuration $(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: Test
+  inputs:
+    command: test
+    projects: '$(Parameters.TestProjects)'
+    arguments: '--configuration $(BuildConfiguration)'
+
+- bash: |
+   echo "=============================================================================="
+   echo "Task          : Get Version"
+   echo "Description   : Get version from a csproj file"
+   echo "Version       : 1.1.0"
+   echo "Author        : Daniel Azevedo Marques"
+   echo "Help          : [More Information](https://github.com/harugrin)"
+   echo "=============================================================================="
+   
+   csprojeFilePath=$(find -name "*.csproj" ! -name "*[Tt]est*.csproj")
+   version=$(awk -F'[<>]' '/<Version>/{print $3}' $csprojeFilePath)
+   versionPrefix=$(awk -F'[<>]' '/<VersionPrefix>/{print $3}' $csprojeFilePath)
+   assemblyVersion=$(awk -F'[<>]' '/<AssemblyVersion>/{print $3}' $csprojeFilePath)
+   
+   echo "File Path: $csprojeFilePath"
+   echo "File version: $version"
+   echo "Assembly version: $assemblyVersion"
+   echo "Version prefix: $versionPrefix"
+   
+   if [[ $version == "" && $assemblyVersion != "" ]]; then
+       version = "$assemblyVersion"
+   elif [[ $version == "" &&  $versionPrefix != "" ]]; then
+       version = "$versionPrefix"
+   else
+       echo $version
+   fi
+   
+   echo "Release version from csproj file: $version"
+   echo "##vso[task.setvariable variable=release;]$version"
+  displayName: 'Bash Script'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Pack Alpha'
+  inputs:
+    command: pack
+    packagesToPack: DanielMarques.Utilities/DanielMarques.Utilities.csproj
+    nobuild: true
+    versioningScheme: byEnvVar
+    versionEnvVar: alpha
+
+- task: NuGetCommand@2
+  displayName: 'Push Alpha'
+  inputs:
+    command: push
+    publishVstsFeed: '29e7925c-c3bc-4807-9ba2-527705aab110'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Pack Beta'
+  inputs:
+    command: pack
+    packagesToPack: DanielMarques.Utilities/DanielMarques.Utilities.csproj
+    nobuild: true
+    versioningScheme: byEnvVar
+    versionEnvVar: beta
+
+- task: DotNetCoreCLI@2
+  displayName: 'Pack Release Candidate'
+  inputs:
+    command: pack
+    packagesToPack: DanielMarques.Utilities/DanielMarques.Utilities.csproj
+    nobuild: true
+    versioningScheme: byEnvVar
+    versionEnvVar: rc
+
+- task: DotNetCoreCLI@2
+  displayName: 'Pack Release'
+  inputs:
+    command: pack
+    packagesToPack: DanielMarques.Utilities/DanielMarques.Utilities.csproj
+    nobuild: true
+    versioningScheme: byEnvVar
+    versionEnvVar: release
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
